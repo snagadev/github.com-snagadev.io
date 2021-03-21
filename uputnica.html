@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forma</title>
+        <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="icon" href="/img/logo.png">
+
+
+
+</head>
+
+<body>
+
+    <div class="home-wrapper">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="title">Ispunite formu </h2>
+            </div>
+            <div class="col-md-12">
+                <div class="about">
+                    <p>Molimo vas da ispunite ovu formu jer ce nama pomoci pri izradnji preciznih podataka koje su u korist svih obeljeli od reumatskih bolesti </p>
+                </div>
+            </div>
+            
+        
+            <form id="theForm" class="main-form needs-validation" novalidate>
+                <div class="form-group">
+                    <label for="bolest">Vrste reumatske bolesti</label>
+                    <select name="reumatskaBolest" id="reumatskaBolest" class="form-control selectpicker " >
+                        <option disabled selected>Izaberite jednu od mogucih opcija</option>
+                        <option value="Reumatoidni artritis">Reumatoidni artritis(RA)</option>
+                        <option value="Ankilozantni spondilitis">Ankilozantni spondilitis(AS)</option>
+                        <option value="Psoriatic arthritis">Psoriatic arthritis(PA)</option>
+                        <option value="Osteoporoza">Osteoporoza</option>
+                        <option value="Sistemski eritemski lupus">Sistemski eritemski lupus(lupus)</option>
+                        <option value="Juvenilni idiopatski artritis">Juvenilni idiopatski artritis(JIA)</option>
+                    </select>
+                    <div class="invalid-feedback">Morate odgovoriti na pitanje</div>
+                </div>
+           
+                <div class="form-group">
+                    <label for="kanton">Kanton</label>
+                    <select name="kanton" id="kanton" class="form-control selectpicker " >
+                        <option disabled selected>Izaberite vas kanton</option>
+                        <option value="Unsko-sanski kanton">Unsko-sanski kanton</option>
+                        <option value="Posavski kanton">Posavski kanton</option>
+                        <option value="Tuzlanski kanton">Tuzlanski kanton</option>
+                        <option value="Zeničko-dobojski kanton">Zeničko-dobojski kanton</option>
+                        <option value="	Bosansko-podrinjski kanton Goražde">Bosansko-podrinjski kanton Goražde</option>
+                        <option value="Srednjobosanski kanton">Srednjobosanski kanton</option>
+                        <option value="Hercegovačko-neretvanski kanton">Hercegovačko-neretvanski kanton</option>
+                        <option value="Zapadnohercegovački kanton">Zapadnohercegovački kanton</option>
+                        <option value="Kanton Sarajevo">Kanton Sarajevo</option>
+                        <option value="Kanton 10">Kanton 10</option>
+                        <option value="RS">RS</option>
+                        <option value="Brčko distrikt">Brčko distrikt</option>
+
+                    </select>
+                    <div class="invalid-feedback">Morate odgovoriti na pitanje</div>
+                </div>
+                <div class="form-group">
+                    <label for="godiste">Starost</label>
+                    <select name="starost" id="starost" class="form-control selectpicker " >
+                        <option disabled selected>Izaberite koliko imate godina</option>
+                        <option value="1-10">1-10</option>
+                        <option value="11-21">11-21</option>
+                        <option value="21-31">21-31</option>
+                        <option value="31-41">31-41</option>
+                        <option value="41-51">41-52</option>
+                        <option value="51-61">51-61</option>
+                        <option value="61-71">61-71</option>
+                        <option value="71+ ">71+</option>
+
+                    </select>
+                    <div class="invalid-feedback">Vrsta terapije</div>
+                </div>
+                <fieldset class="form-group">
+                    <div class="row">
+                      <legend class="col-form-label col-sm-2 pt-0">Terapija</legend>
+                      <div class="col-sm-10">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="terapija" id="gridRadios1" value="bioloska" checked>
+                          <label class="form-check-label" for="gridRadios1">
+                            Bioloska
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="terapija" id="gridRadios2" value="bazna">
+                          <label class="form-check-label" for="gridRadios2">
+                            Bazna(metotrexat,arava)
+                          </label>
+                        </div>
+                        <div class="form-check disabled">
+                          <input class="form-check-input" type="radio" name="terapija" id="gridRadios3" value="ne koristim" >
+                          <label class="form-check-label" for="gridRadios3">
+                            Ne koristim terapije 
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </fieldset>
+                
+           
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+      Submit
+    </button>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">   <h5 class="modal-title" id="exampleModalLabel">Želite li poslati formu</h5></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Molimo vas provjerite da li ste sva pitanja odgovorili 
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Ne</button>
+            <button type="submit" class="btn btn-primary">Da</button>
+          </div>
+        </div>
+      </div>
+    </div>
+           
+              </form>
+        </div>
+    </div>
+
+
+
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <script>
+  
+        // var form = document.querySelector('.needs-validation');
+
+        // form.addEventListener('submit', function(event) {
+        //     if (form.checkValidity() === false) {
+        //         event.preventDefault();
+        //         event.stopPropagation();
+        //         $("#theForm").ajaxSubmit({url: 'http://localhost:8000/prijavnica', type: 'post'})
+        //     }
+        //     form.classList.add('was-validated');
+
+            
+
+        // })
+        const $form = $('#theForm')
+
+$form.on('submit', submitHandler)
+
+function submitHandler (e) {
+  e.preventDefault()
+
+  $.ajax({
+    url: 'https://backend-snaga.herokuapp.com/prijavnica',
+    type:'POST',
+    data: $form.serialize()
+  }).done(response => {
+    alert("uspjesno ste poslali")
+    $('.modal').modal('hide')
+
+  })
+}
+    </script>
+</body>
+
+</html>
