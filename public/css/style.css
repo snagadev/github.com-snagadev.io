@@ -1816,6 +1816,7 @@ header {
     z-index: 1 !important;
     text-align: center !important;
     z-index: 99;
+    margin-bottom: 10px;
   }
   
   .sponsorsFooter h1 {
